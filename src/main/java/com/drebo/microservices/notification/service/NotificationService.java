@@ -36,7 +36,7 @@ public class NotificationService {
         //send email to customer
         MimeMessagePreparator messagePreparator = mimeMessage -> {
             MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
-            messageHelper.setFrom("test@email.com");
+            messageHelper.setFrom("testadmin@email.com");
             messageHelper.setTo(orderNotificationEvent.getEmail().toString());
             messageHelper.setSubject(emailSubject);
             messageHelper.setText(emailText);
